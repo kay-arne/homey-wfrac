@@ -1256,8 +1256,8 @@
           }
         },
         "target_temperature": {
-          "min": 10,
-          "max": 33,
+          "min": 18,
+          "max": 30,
           "step": 0.5
         },
         "alarm_generic": {
@@ -1424,6 +1424,34 @@
               "hint": {
                 "en": "Asks the unit for its operating current about once a minute while it is on, to show live power. Turn this off if the unit changes its settings by itself, for example the operating mode switching to Auto: some indoor units react to this request.",
                 "nl": "Vraagt de unit ongeveer eens per minuut, terwijl hij aan staat, om zijn stroomverbruik om het vermogen te tonen. Zet dit uit als de unit uit zichzelf instellingen verandert, bijvoorbeeld de werkingsmodus die naar Automatisch springt: sommige binnenunits reageren op dit verzoek."
+              }
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Vacant property mode",
+            "nl": "Leegstaand pand modus"
+          },
+          "children": [
+            {
+              "id": "vacant_target_temperature",
+              "type": "number",
+              "label": {
+                "en": "Temperature",
+                "nl": "Temperatuur"
+              },
+              "value": 10,
+              "min": 10,
+              "max": 33,
+              "step": 0.5,
+              "units": {
+                "en": "°C"
+              },
+              "hint": {
+                "en": "Temperature the unit keeps while vacant property mode is on: 10–17.5 °C heats to keep the room from getting too cold, 30.5–33 °C cools to keep it from getting too hot. Vacant property mode is turned on and off with its own toggle or flow cards. Only for units that support it.",
+                "nl": "Temperatuur die de unit aanhoudt zolang leegstaand pand modus aan staat: 10–17,5 °C verwarmt zodat het niet te koud wordt, 30,5–33 °C koelt zodat het niet te warm wordt. Leegstaand pand modus zet je aan en uit met zijn eigen schakelaar of flowkaarten. Alleen voor units die dit ondersteunen."
               }
             }
           ]
